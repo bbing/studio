@@ -23,8 +23,20 @@ class Index extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct()
+	{
+		parent::__construct();
+	}
+	
 	public function index()
 	{
-		echo 'Hello World£¡'; 
+		echo 'Hello World£¡';
+		$this->load->view('index');
+	}
+	
+	public function test()
+	{
+		echo 111;
+		//$this->load->view('blogview');
 	}
 }
