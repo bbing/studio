@@ -10,6 +10,6 @@ class News extends CI_Controller {
 	public function initData() {
 		//$query = $this->db->query ( 'SELECT * FROM news' );
 		//echo $query;
-		echo "{\"total\":2,\"rows\":[{\"id\":1,\"name\":\"ace\"},{\"id\":2,\"name\":\"ptf\"}]}";
+		echo "{\"total\":2,\"rows\":[{\"id\":1,\"name\":\"ace\"},{\"id\":2,\"name\":\"ptfacetest\"}]}";
 	}
 }
