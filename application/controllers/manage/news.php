@@ -8,8 +8,8 @@ class News extends CI_Controller {
 		$this->load->view ( "manage/news/index" );
 	}
 	public function initData() {
-		//$query = $this->db->query ( 'SELECT * FROM news' );
-		//echo $query;
-		echo "{\"total\":2,\"rows\":[{\"id\":1,\"name\":\"ace\"},{\"id\":2,\"name\":\"ptf\"}]}";
+		$query = $this->db->query ( 'SELECT * FROM news' );
+		$news = $query->result ();
+ 		echo "{\"total\":" + count ($news) + ",\"rows\":"+json_encode($news)+"}";
 	}
 }
