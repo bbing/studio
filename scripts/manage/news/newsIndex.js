@@ -1,0 +1,18 @@
+$(function(){
+	$("#list").datagrid({
+		striped:true,
+		idField:'id',
+		pagination:true,
+		sortName:'id',
+		fitColumns:true,
+		url:"/php/manage/news/initData",
+		frozenColumns:[[
+		                {field:"ck",checkbox:true}
+		                ]],
+		columns:[[ 
+		          {field:'title',title:'标题',width:200},
+		          {field:"copyWriter",title:"撰稿人",width:120},
+		          {field:"createTime",title:"创建时间",width:120}
+		          ]]
+	})
+})
