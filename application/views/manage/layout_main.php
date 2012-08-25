@@ -18,15 +18,7 @@
 <script type="text/javascript"
 	src="<?php echo base_url();?>scripts/jquery-1.8.0.min.js"></script>
 <script type="text/javascript"
-	src="<?php echo base_url();?>scripts/manage/simpla.jquery.configuration.js"></script>
-<script type="text/javascript"
-	src="<?php echo base_url();?>scripts/manage/facebox.js"></script>
-<script type="text/javascript"
-	src="<?php echo base_url();?>scripts/manage/jquery.wysiwyg.js"></script>
-<script type="text/javascript"
-	src="<?php echo base_url();?>scripts/manage/jquery.datePicker.js"></script>
-<script type="text/javascript"
-	src="<?php echo base_url();?>scripts/manage/jquery.date.js"></script>
+	src="<?php echo base_url();?>scripts/manage/sidebar.js"></script>
 <script type="text/javascript"
 	src="<?php echo base_url();?>scripts/jquery.easyui.min.js"></script>
 <script type="text/javascript"
