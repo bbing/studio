@@ -1,28 +1,7 @@
 <?php 
 /**
- * ¿ØÖÆÆ÷²âÊÔ
- * @author ÕÅ±ø<bing@colorstudio.cn>
- * @create 2012-08-16
  */
-if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
 class Index extends CI_Controller {
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
 	public function __construct()
 	{
 		parent::__construct();
@@ -30,13 +9,20 @@ class Index extends CI_Controller {
 	
 	public function index()
 	{
-		echo 'Hello World£¡';
-		$this->load->view('index');
+		$this->load->model('Data');
+		$data['todo_list'] = array('Clean House', 'Call Mom', 'Run Errands');
+		$data['title'] = "My Real Title";
+		$data['heading'] = "My Real Heading";
+		$data['list']	= $this->Data->getInfo();
+		$this->load->helper('url');
+		$this->load->view('common/head');
+		$this->load->view('index', $data);
 	}
 	
 	public function test()
 	{
-		echo 111;
-		//$this->load->view('blogview');
+		$this->load->view('common/head');
+		//$this->load->view('index');
+		$this->load->view('common/foot');
 	}
 }
