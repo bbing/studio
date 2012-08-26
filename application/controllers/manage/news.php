@@ -4,14 +4,19 @@ class News extends CI_Controller {
 		parent::__construct ();
 	}
 	public function index() {
-		$this->load->library('Layout_manage');
+		$this->load->library ( 'Layout_manage' );
 		$this->load->helper ( 'url' );
-		$this->layout_manage->view ( "manage/news/index");
+		$this->layout_manage->view ( "manage/news/index" );
 	}
-	public function initData($whereCondition) {
-		$query = $this->db->query ( 'SELECT * FROM news' );
-		$test= $this->input->post("id");
-		$news = $query->result ();
-		echo "{\"total\":" . count ( $news ) . ",\"rows\":" . json_encode ( $news ) . "}";
+	public function initData() {
+		$title = $this->input->post ( 'title' );
+		$begin = $this->input->post ( 'begin' );
+		$end = $this->input->post ( 'end' );
+		$page = $this->input->post ( 'page' );
+		$rows = $this->input->post ( 'rows' );
+		$order = $this->input->post ( 'order' );
+		$sort = $this->input->post ( 'sort' );
+		$this->load->model ( 'manage/News_model' );
+		echo $this->News_model->queryData ( $title, $begin, $end, ($page - 1) * $rows, $rows, $sort, $order );
 	}
 }
