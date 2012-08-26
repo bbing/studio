@@ -1,3 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>29013 template preview</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="themes/style.css" rel="stylesheet" type="text/css" />
+<link href="themes/layout.css" rel="stylesheet" type="text/css" />
+<script src="scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="scripts/maxheight.js" type="text/javascript"></script>
+<script src="scripts/cufon-yui.js" type="text/javascript"></script>
+<script src="scripts/cufon-replace.js" type="text/javascript"></script>
+<script src="scripts/Nilland_400.font.js" type="text/javascript"></script>
+<script src="scripts/Nilland-Black_900.font.js" type="text/javascript"></script>
+<script src="scripts/Kozuka_Gothic_Standard_OpenType_300.font.js" type="text/javascript"></script>
+<script src="scripts/Kozuka_Gothic_Standard_OpenType_500.font.js" type="text/javascript"></script>
+<script src="scripts/jquery.faded.js" type="text/javascript"></script>
+<script src="scripts/jcarousellite.js" type="text/javascript"></script>
+<script src="scripts/script.js" type="text/javascript"></script>
+<script type="text/javascript">
+	//faded
+$(function(){
+		$("#faded").faded({
+			speed: 500,
+			crossfade: true,
+			bigtarget: true,
+			sequentialloading: false,
+			loadingimg: "images/loading.gif",
+			autoplay: 5000,
+			autorestart: 0,
+			random: false,
+			autopagination:false
+		});
+});
+</script>
+<!--[if lt IE 7]>
+   <link href="ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body id="page1" onload="new ElementMaxHeight()">
+<div id="main">
+   <!-- HEADER -->
+   <div id="header">
+      <div class="left">
+         <div class="right">
+            <div class="row-1 wrapper">
+               <h1><a href="index.html"><img src="images/logo.png" alt="色彩工作室" />aaa</a></h1>
+               <ul>
+                  <li><a href="#"><img src="images/stumble-upon.gif" alt="" /></a></li>
+                  <li><a href="#"><img src="images/myspace.gif" alt="" /></a></li>
+                  <li><a href="#"><img src="images/twitter.gif" alt="" /></a></li>
+               </ul>
+            </div>
+            <div class="row-2">
+               <ul class="wrapper">
+                  <li class="m1"><a href="#">Home<span>Our front page</span></a></li>
+                  <li class="m2"><a href="#">About<span>Who we are</span></a></li>
+                  <li class="m3"><a href="#">Services<span>What we do</span></a></li>
+                  <li class="m4"><a href="#">Solutions<span>Success strategies</span></a></li>
+                  <li class="m5"><a href="#">Support<span>24/7 live help</span></a></li>
+                  <li class="m6 last"><a href="#">Our Mail<span>How to get us</span></a></li>
+               </ul>
+            </div>
+            <div class="row-3 wrapper">
+               <div class="fleft"><span>Home</span>our mission</div>
+               <form action="" id="search-form">
+                  <fieldset>
+                  <div class="fright">
+                     <label><a href="#">Client Login</a> &nbsp;|&nbsp;  Search</label>
+                     <span>
+                     <input type="text" />
+                     </span><a href="#" onclick="document.getElementById('search-form').submit()"><img src="images/button.gif" alt="" /></a></div>
+                  </fieldset>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
    <!-- CONTENT -->
    <div id="content">
       <div class="wrapper">
@@ -119,4 +197,19 @@
       </div>
    </div>
    <!-- FOOTER -->
-   
+   <div id="footer">
+      <p>Newlevex (c) 2010  &nbsp;|&nbsp; <a href="#">Privacy policy</a></p>
+   </div>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7078796-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
