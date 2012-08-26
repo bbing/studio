@@ -5,6 +5,7 @@ $(function(){
 		pagination:true,
 		sortName:'id',
 		fitColumns:true,
+		queryParams:{id:1},
 		url:"/php/manage/news/initData",
 		frozenColumns:[[
 		                {field:"ck",checkbox:true}
