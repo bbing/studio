@@ -22,7 +22,7 @@ class News_model extends CI_Model {
 		return "{\"total\":$total,\"rows\":" . json_encode ( $news ) . "}";
 	}
 	function getNews($id) {
-		$news = $this->db->query ( "SELECT * FROM news WHERE id='" . $id . "'" )->result ();
+		$news = $this->db->query ( "SELECT * FROM news WHERE id='{$id}'" )->result ();
 		return $news [0];
 	}
 	function deleteNews($ids) {
