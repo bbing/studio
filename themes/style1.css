@@ -10,12 +10,12 @@ html {
 } 
 
 body { 
-	background:#fff; 
 	font-family:"trebuchet MS", Helvetica, sans-serif; 
 	font-size:100%; 
 	line-height:1em; 
 	color:#bcbcbc; 
 	min-width:982px;
+	background: url("../images/bgbody.gif") repeat fixed 0 0 #F7F7F7;
 }
 
 object { 
@@ -75,10 +75,13 @@ ol {
 }
 
 .wrapper { 
-	width:100%; 
+	width:100%;
 	overflow:hidden;
 }
-
+.banner {
+	margin-top:5px;
+	background:#FFF;
+}
 .extra-wrap {
 	overflow:hidden;
 }
@@ -277,7 +280,6 @@ p {
 .slogan {
 	float:left;
 	width:285px;
-	padding-top:35px;
 }
 .slogan p {
 	padding:15px 0 26px 0;
@@ -502,10 +504,10 @@ h5 a:hover {
 /*========================== HEADER ===========================*/
 
 #header .left {
-	background:url(../images/header-left.gif) no-repeat left -70px;
+	background:url(../images/header-left.png) no-repeat left -70px transparent;
 }
 #header .right {
-	background:url(../images/header-right.gif) no-repeat right  -70px;
+	background:url(../images/header-right.png) no-repeat right  -70px transparent;
 }
 #header .row-1 {
 	height:70px;
