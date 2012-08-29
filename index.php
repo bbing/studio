@@ -1,4 +1,5 @@
 <?php
+header("Content-type:text/html;charset:urt-8");
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
