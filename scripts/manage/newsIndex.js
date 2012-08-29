@@ -1,9 +1,0 @@
-$(function(){
-	$("#list").datagrid({
-		url:"/studio/index.php/manage/news/initData",
-		columns:[[
-		          {field:'id',title:'ID',width:100},  
-		          {field:'name',title:'Name',width:100}
-		          ]]
-	})
-})
